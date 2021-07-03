@@ -64,6 +64,10 @@ letter-spacing: 0.02em;
 color: #212121;
 }
 
+.menu-link.current {
+color: #2196F3;
+}
+
 .menu-link:hover,
 .menu-link:focus {
 color: #2196F3;
@@ -273,6 +277,10 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
+}
+
+.porfolio-buttons-item.current{
+color: #2196F3; 
 }
 
 .porfolio-buttons-item:hover,
