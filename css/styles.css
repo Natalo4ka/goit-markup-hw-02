@@ -34,14 +34,32 @@ img {
 }
 
 
-
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /*=========== HEADER =========*/
 body {
  font-family: "Roboto", sans-serif;
 }
-.navigation{}
+
+.page-header{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+}
 
 .logo{
 font-family: "Raleway", sans-serif;
@@ -50,6 +68,7 @@ font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
 color: #2196F3;
+margin-right: 90px;
 }
 .logo-header-part-2{
   color: #000000;
@@ -73,6 +92,21 @@ color: #2196F3;
 color: #2196F3;
 }
 
+.menu-link{
+  display: flex;
+  align-items: center;
+}
+
+.menu-list{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+} 
+
+.menu-item:not(:last-child){
+  margin-right: 50px;
+}
+
 .mail-link{
 font-family: "Roboto", sans-serif;
 font-weight: 500;
@@ -80,6 +114,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+margin-right: 50px;
 }
 
 .mail-link:hover,
@@ -105,6 +140,13 @@ color: #2196F3;
 
 
 /*=========== HERO =========*/
+.hero-container{
+  display: flex;
+  align-items: center;
+  height: 600px;
+  width: 1600px;
+  
+}
 .hero{
 background-color: #2F303A;
 text-align: center;
@@ -130,12 +172,23 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
+
+width: 200px;
+padding: 12px 0;
+border-radius: 6px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /*=========== END HERO =========*/
 
 
 
 /*=========== FEATURES =========*/
+
+.our-features-all list{
+display: flex;
+align-items: center;
+}
 .our-features-title{
 font-family: "Roboto", sans-serif;
 font-weight: bold;
