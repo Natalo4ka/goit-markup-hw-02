@@ -16,54 +16,56 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  }
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
 
 img {
-  display: block;
+display: block;
 }
 
 .list{
-    list-style: none;
+list-style: none;
 }
 .link{
-    text-decoration: none;
+text-decoration: none;
 }
 
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 /*=========== HEADER =========*/
 body {
- font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
+max-width: 1600px;
 }
 
 .page-header{
-  padding-top: 30px;
-  padding-bottom: 30px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .header-container{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
+
 }
 
 .navigation{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .logo{
@@ -145,19 +147,17 @@ color: #2196F3;
 
 
 /*=========== HERO =========*/
-.hero-container{
-display: flex;
-align-items: center;
-height: 600px;
-width: 1600px;
-}
 .hero{
 background-color: #2F303A;
 text-align: center;
-}
+padding-top: 200px;
+padding-bottom: 200px;
+max-width: 1600px;}
+
 .hero-title{
 width: 696px;
 margin: 0 auto;
+margin-bottom: ;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -188,13 +188,10 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .our-features{
 padding-top: 84px;
 padding-bottom: 94px;
+max-width: 1600px;
 } 
-.our-features-container{
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.our-features-all list{
+
+.our-features-all{
 display: flex;
 margin-top: -30px;
 margin-left: -30px;
@@ -202,8 +199,8 @@ margin-left: -30px;
 .our-features-item{
 display: list-item;
 }
-.our-features-div{
-justify-content: space-between;
+.our-features-item:not(:last-child){
+margin-right: 30px;
 }
 .our-features-title{
 font-family: "Roboto", sans-serif;
@@ -216,6 +213,7 @@ color: #212121;
 margin-top: 30px;
 margin-left: 30px;
 }
+
 .our-features-description{
 font-family: "Roboto", sans-serif;
 font-size: 14px;
@@ -226,13 +224,23 @@ flex-basis: calc((100% - 120px) / 4);
 margin-top: 30px;
 margin-left: 30px;
 }
+
 /*=========== END FEATURES =========*/
 
 
 /*=========== WHAT WE DO =========*/
 .what-we-do-container{
-display: flex;
+padding-top: 94px;
+padding-bottom: 196px;
+margin-right: 215px;
+margin-left: 215px;
 }
+
+.what-we-do-all{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;}
+
 .what-we-do-title{
 font-family: "Roboto", sans-serif;
 font-weight: bold;
@@ -248,10 +256,24 @@ margin-bottom: 56px;
 
 /*=========== TEAM =========*/
 .our-team-container{
-display: flex;
-
+background-color: #F5F4FA;
+text-align: center;
+max-width: 1600px;
+height: 648px;
+padding-top: 64px;
 }
 
+.our-team-all{
+display: flex;
+margin-left: -30px;
+margin-top: -30px;
+}
+
+.our-team-item{
+flex-basis: calc ((100% - 120px) / 4);
+margin-left: 30px;
+margin-top: 30px;
+}
 .our-team-title{
 font-family: "Roboto", sans-serif;
 font-weight: bold;
@@ -262,6 +284,7 @@ letter-spacing: 0.03em;
 color: #212121;
 margin-top: 92px;
 margin-bottom: 56px;
+
 }
 .our-team-name{
 font-family: "Roboto", sans-serif;
@@ -271,7 +294,10 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-top: 30px;
+margin-bottom: 15px;
 }
+
 .our-team-position{
 font-family: "Roboto", sans-serif;
 font-weight: normal;
@@ -280,6 +306,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
+margin-bottom: 30px;
 }
 /*=========== END TEAM =========*/
 
@@ -287,21 +314,18 @@ color: #757575;
 /*=========== FOOTER =========*/
 .page-footer{
 background-color: #2F303A;
+max-width: 1600px;
 }
-
 .footer-container{
 align-items: center;
-height: 254px;
+height: 252px;
 width: 1600px;
 padding-left: 200px;
 padding-top: 60px;
 padding-bottom: 60px;
-
 }
-
 .logo-footer{
 padding-bottom: 30px;
-
 display: block;
 font-family: "Raleway", sans-serif;
 font-weight: bold;
@@ -313,9 +337,8 @@ color: #2196F3;
 .logo-footer-part-2 {
 color: #FFFFFF;
 }
-
 .address-link{
-margin-bottom: 22px;
+
 font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -323,10 +346,10 @@ font-size: 14px;
 line-height: 1.72;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+margin-bottom: 15px;
 }
-
 .mail-link{
-margin-bottom: 22px;
+
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-style: normal;
@@ -334,15 +357,12 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
+margin-bottom: 15px;
 }
-
-
-
 .mail-link:hover,
 .mail-link:focus{
 color: #2196F3;
 }
-
 .tel-link{
 font-family: "Roboto", sans-serif;
 font-style: normal;
@@ -352,17 +372,33 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
 }
-
 .tel-link:hover,
 .tel-link:focus{
 color: #2196F3; 
 }
+
+.menu-footer-item{
+margin-bottom: 15px;
+}
 /*=========== END FOOTER =========*/
 
 /*=========== PORTFOLIO =========*/
+.portfolio-projects{
+max-width: 1600px;
+}
+
+.portfolio-buttons{
+padding-top: 92px;
+padding-bottom: 50px;
+align-items: center;
+}
+.portfolio-buttons-all{
+display: flex;
+padding-left: 496px;
+}
 
 .porfolio-buttons-item{
-
+background-color: #f5f4fa;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -372,19 +408,16 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 cursor: pointer;
+margin-right: 5px;
 }
-
 .porfolio-buttons-item.current{
 color: #2196F3; 
 }
-
 .porfolio-buttons-item:hover,
 .porfolio-buttons-item:focus{
 background-color: #2196F3;
 color: #FFFFFF;
 }
-
-
 .portfolio-name{
 font-family: Roboto;
 font-style: normal;
@@ -394,7 +427,6 @@ line-height: 36px;
 letter-spacing: 0.06em;
 color: #212121;
 }
-
 .portfolio-type{
 font-family: Roboto;
 font-style: normal;
@@ -404,5 +436,22 @@ line-height: 30px;
 letter-spacing: 0.03em;
 color: #757575;
 }
+
+.portfolio-projects{
+margin-left: 215px;
+}
+
+.portfolio-projects-all{
+display: flex;
+margin-left: -30px;
+margin-top: -30px;
+}
+
+.portfolio-projects-item{
+flex-basis: calc ((100% - 90px) / 3);
+margin-left: 30px;
+margin-top: 30px;
+}
+
 
 /*=========== END PORTFOLIO =========*/
