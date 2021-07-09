@@ -2,6 +2,11 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196F3; 
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --acent-text-color: #ffffff;
+  --background-color: #2F303A;
+  --secondary-background-color: #F5F4FA;
 }
 
 h1,
@@ -93,18 +98,18 @@ color: #2196F3;
 }
 
 .menu-link{
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .menu-list{
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+display: flex;
+align-items: center;
+margin-left: auto;
 } 
 
 .menu-item:not(:last-child){
-  margin-right: 50px;
+margin-right: 50px;
 }
 
 .mail-link{
@@ -141,11 +146,10 @@ color: #2196F3;
 
 /*=========== HERO =========*/
 .hero-container{
-  display: flex;
-  align-items: center;
-  height: 600px;
-  width: 1600px;
-  
+display: flex;
+align-items: center;
+height: 600px;
+width: 1600px;
 }
 .hero{
 background-color: #2F303A;
@@ -162,7 +166,6 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-
 .modal-btn{
 background-color:#2196F3;
 font-family: inherit;
@@ -172,11 +175,9 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 cursor: pointer;
-
 width: 200px;
 padding: 12px 0;
 border-radius: 6px;
-
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /*=========== END HERO =========*/
@@ -184,10 +185,25 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 
 /*=========== FEATURES =========*/
-
-.our-features-all list{
+.our-features{
+padding-top: 84px;
+padding-bottom: 94px;
+} 
+.our-features-container{
 display: flex;
 align-items: center;
+justify-content: space-between;
+}
+.our-features-all list{
+display: flex;
+margin-top: -30px;
+margin-left: -30px;
+}
+.our-features-item{
+display: list-item;
+}
+.our-features-div{
+justify-content: space-between;
 }
 .our-features-title{
 font-family: "Roboto", sans-serif;
@@ -197,20 +213,27 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
+margin-top: 30px;
+margin-left: 30px;
 }
-
 .our-features-description{
 font-family: "Roboto", sans-serif;
 font-size: 14px;
 line-height: 1.72;
 letter-spacing: 0.03em;
 color: #757575;
+flex-basis: calc((100% - 120px) / 4);
+margin-top: 30px;
+margin-left: 30px;
 }
 /*=========== END FEATURES =========*/
 
 
-/*=========== ABOUT =========*/
-.our-work-title{
+/*=========== WHAT WE DO =========*/
+.what-we-do-container{
+display: flex;
+}
+.what-we-do-title{
 font-family: "Roboto", sans-serif;
 font-weight: bold;
 font-size: 36px;
@@ -218,11 +241,16 @@ line-height: 1.67;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 56px;
 }
-/*=========== END ABOUT =========*/
+/*=========== END WHAT WE DO =========*/
 
 
 /*=========== TEAM =========*/
+.our-team-container{
+display: flex;
+
+}
 
 .our-team-title{
 font-family: "Roboto", sans-serif;
@@ -232,8 +260,9 @@ line-height: 1.67;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-top: 92px;
+margin-bottom: 56px;
 }
-
 .our-team-name{
 font-family: "Roboto", sans-serif;
 font-weight: 500;
@@ -243,7 +272,6 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
-
 .our-team-position{
 font-family: "Roboto", sans-serif;
 font-weight: normal;
@@ -253,16 +281,28 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 }
-
 /*=========== END TEAM =========*/
 
 
 /*=========== FOOTER =========*/
 .page-footer{
-    background-color: #2F303A;
+background-color: #2F303A;
+}
+
+.footer-container{
+align-items: center;
+height: 254px;
+width: 1600px;
+padding-left: 200px;
+padding-top: 60px;
+padding-bottom: 60px;
+
 }
 
 .logo-footer{
+padding-bottom: 30px;
+
+display: block;
 font-family: "Raleway", sans-serif;
 font-weight: bold;
 font-size: 26px;
@@ -275,6 +315,7 @@ color: #FFFFFF;
 }
 
 .address-link{
+margin-bottom: 22px;
 font-family: "Roboto", sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -285,6 +326,7 @@ color: #FFFFFF;
 }
 
 .mail-link{
+margin-bottom: 22px;
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-style: normal;
