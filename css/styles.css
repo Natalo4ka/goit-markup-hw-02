@@ -50,20 +50,22 @@ padding-right: 15px;
 /*=========== HEADER =========*/
 body {
 font-family: "Roboto", sans-serif;
-max-width: 1600px;}
-
+max-width: 1600px;
+margin: 0;
+}
 .page-header{
 padding-top: 24px;
-padding-bottom: 24px;}
-
+padding-bottom: 24px;
+border-bottom: 1px solid #EEEEEE;
+}
 .header-container{
 display: flex;
-align-items: center;}
-
+align-items: center;
+}
 .navigation{
 display: flex;
-align-items: center;}
-
+align-items: center;
+}
 .logo{
 font-family: "Raleway", sans-serif;
 font-weight: bold;
@@ -179,8 +181,6 @@ max-width: 1600px;
 } 
 .our-features-all{
 display: flex;
-margin-top: -30px;
-margin-left: -30px;
 }
 .our-features-item{
 display: list-item;
@@ -196,7 +196,6 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
-margin-top: 30px;
 margin-left: 30px;
 }
 .our-features-description{
@@ -214,8 +213,7 @@ margin-left: 30px;
 
 /*=========== WHAT WE DO =========*/
 .what-we-do-container{
-padding-top: 94px;
-padding-bottom: 196px;
+padding-bottom: 94px;
 margin-right: 215px;
 margin-left: 215px;
 }
@@ -243,8 +241,8 @@ background-color: #F5F4FA;
 text-align: center;
 max-width: 1600px;
 height: 648px;
-padding-top: 64px;
-padding-bottom: 10px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 .our-team-all{
 display: flex;
@@ -252,7 +250,7 @@ margin-left: -30px;
 margin-top: -30px;
 }
 .our-team-item:not(:last-child){
-margin-right: 50px;
+margin-right: 30px;
 }
 .our-team-title{
 font-family: "Roboto", sans-serif;
@@ -262,7 +260,6 @@ line-height: 1.67;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-top: 92px;
 margin-bottom: 56px;
 }
 .our-team-name{
@@ -305,14 +302,12 @@ border-radius: 0px 0px 4px 4px;
 .page-footer{
 background-color: #2F303A;
 max-width: 1600px;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .footer-container{
 align-items: center;
-height: 252px;
-width: 1600px;
 padding-left: 200px;
-padding-top: 60px;
-padding-bottom: 60px;
 }
 .logo-footer{
 padding-bottom: 30px;
@@ -364,9 +359,10 @@ color: #757575;
 .tel-link:focus{
 color: #2196F3; 
 }
-.menu-footer-item{
+.menu-footer-item:not(:last-child){
 margin-bottom: 15px;
 }
+
 /*=========== END FOOTER =========*/
 
 /*=========== PORTFOLIO =========*/
@@ -395,7 +391,7 @@ color: #212121;
 cursor: pointer;
 margin-right: 5px;
 border: #EEEEEE;
-border-radius: 0px 0px 4px 4px;
+border-radius: 4px 4px 4px 4px;
 }
 .porfolio-buttons-item:not(:last-child){
 margin-right: 5px;
