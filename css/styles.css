@@ -364,16 +364,19 @@ margin-bottom: 15px;
 /*=========== END FOOTER =========*/
 
 /*=========== PORTFOLIO =========*/
+.portfolio{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .portfolio-projects{
 max-width: 1600px;
-padding-bottom: 95px;
 margin: auto;
 }
 .portfolio-buttons{
-padding-top: 92px;
 padding-bottom: 50px;
 margin: auto;
 }
+
 .portfolio-buttons-all{
 display: flex;
 justify-content: center;
@@ -423,7 +426,6 @@ line-height: 30px;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
-
 .portfolio-projects-all{
 display: flex;
 flex-wrap: wrap;
