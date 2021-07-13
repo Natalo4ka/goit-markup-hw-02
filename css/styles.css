@@ -135,12 +135,7 @@ color: var(--accent-color);
 
 /*=========== HERO =========*/
 .hero{
-background-color: #212121;
-background-image: linear-gradient (
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4);
-  ), url(./images/hero-bg);
-background-size: cover;
+background-color: var(--background-color);
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
@@ -202,7 +197,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-text-color);
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
 .our-features-description{
 font-family: var(--main-font);
